@@ -224,11 +224,13 @@ nav {
 }
 .slider-content-left-top-container {
     position: relative;
+    overflow: hidden;
 }
 .slider-content-left-top {
     width: 100%;
     height: 578px;
     position: relative;
+    transition: all 0.3s ease;
 }
 .slider-content-left-top img {
     width: 100%;
@@ -250,6 +252,8 @@ nav {
     height: 100%;
     line-height: 38px;
     position: relative;
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
 }
 .slider-content-left-bottom li:before {
     display: block;
@@ -262,6 +266,7 @@ nav {
 }
 .slider-content-left-bottom li.active {
     border-top: 4px solid #2f318d;
+    font-weight: bold;
 }
 .slider-content-left-top-btn {
     position: absolute;
@@ -275,7 +280,6 @@ nav {
     font-size: 32px;
     height: 60px;
     width: 30px;
-    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
