@@ -7,6 +7,9 @@
 ul {
     list-style: none;
 }
+li {
+    list-style: none;
+}
 a {
     text-decoration: none;
 }
@@ -183,11 +186,12 @@ nav {
 .submenu {
     display: none;
     position: absolute;
-    background-color: #47498f;
+    background-color: #2f318d;
     width: 300px;
     height: auto;
     left: 0;
-    top: 29.33px;
+    top: 100%;
+    /*top: 29.33px;*/
     padding: 10px;
 }
 .submenu ul {
@@ -204,4 +208,53 @@ nav {
 }
 .submenu ul li:hover a{
     color: #FFF200;
+}
+/************Slider**************/
+.slider {
+    padding: 20px 0;
+    height: 350px;
+}
+.slider-content {
+    display: flex;
+    justify-content: space-between;
+}
+.slider-content-left {
+    width: 65%;
+}
+.slider-content-left-top {
+    width: 100%;
+    height: 300px;
+}
+.slider-content-left-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-content-left-bottom {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #ddd;
+    border-top: none;
+    height: 50px;
+}
+.slider-content-left-bottom li {
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+    padding: 6px 0;
+    height: 100%;
+    line-height: 38px;
+    position: relative;
+}
+.slider-content-left-bottom li:before {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 1px;
+    background-color: #ddd;
+    right: 0;
+}
+.slider-content-right {
+    width: 35%;
 }
