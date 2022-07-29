@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8e270ad0e9.js" crossorigin="anonymous"></script>
     <title>Siêu thị thuốc</title>
+    <link rel="shortcut icon" type="image/png" href="image/trung.png"/>
+
 
     <link rel="stylesheet" href="style.css">
-
 
 </head>
 <body>
@@ -21,49 +22,60 @@
 <nav>
     <div class="container">
         <ul>
-            <li><a href=""><img style="width: 75px" src="image/trung.png" alt="BNP"></a></li>
+            <li><a href="https://baniphar.com/"><img style="width: 75px" src="image/trung.png" alt="BNP"></a></li>
             <li><a href="">Trang chủ</a></li>
-            <li><a href="">Danh mục<i class="fas fa-sort-down"></i></a></li>
+            <li><a href="">Danh mục<i class="fas fa-sort-down"></i></a>
+                <div class="submenu">
+                    <ul>
+                        <li><a href="">Thuốc tân dược</a></li>
+                        <li><a href="">Thực phẩm chức năng</a></li>
+                        <li><a href="">Vật tư y tế</a></li>
+                        <li><a href="">Thuốc gia truyền</a></li>
+                    </ul>
+                </div>
+            </li>
             <li><input type="text" placeholder="        Bạn tìm gì..."><i class="fa-solid fa-magnifying-glass"></i></li>
             <li><a href=""><button><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</button></a></li>
             <li><a href=""><button><i class="fa-solid fa-gift"></i>Ưu đãi</button></a></li>
             <li><a href="">Sống khoẻ</a></li>
             <li><a href="">Hỏi đáp</a></li>
             <li><a href="">Cửa hàng</a></li>
-            <li><div class="container">
-                <a id="myBtn" href="">Đăng nhập</a>
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <h2>Đăng nhập</h2>
-                        <form action="#">
-                            <span class="close">&times;</span>
-                            <table class="fomrgroup">
-                                <tr>
-                                    <td colspan="2" style="text-align: center"><h2>Đăng nhập cho nhà quản lý</h2></td>
-                                </tr>
-                                <tr>
-                                    <td style="text-align: right">Số điện thoại:</td>
-                                    <td><input type="text" name="username" style="text-align: right"></td>
-                                </tr>
-                                <tr>
-                                    <td style="text-align: right">Mật khẩu:</td>
-                                    <td><input type="passWord" name="passWord" style="text-align: right"></td>
-                                </tr>
-                                <tr>
-                                    <td><br></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" style="text-align: center"><button onclick="login">Đăng nhập</button></td>
-                                </tr>
-                            </table>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            </li>
+            <li><button id="myBtn">Đăng nhập</button></li>
         </ul>
     </div>
 </nav>
-</body>
+
+<!------------form-------------->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <form action="#">
+            <span class="close">&times;</span>
+            <table class="fomrgroup">
+                <tr>
+                    <td colspan="2" style="text-align: center"><h2>Đăng nhập cho quản lý</h2></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">Số điện thoại:</td>
+                    <td><input type="text" name="username" style="text-align: right"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">Mật khẩu:</td>
+                    <td><input type="passWord" name="passWord" style="text-align: right"></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center"><button onclick="login">Đăng nhập</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
 <script src="container.js"></script>
+</body>
 </html>
