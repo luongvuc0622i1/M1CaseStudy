@@ -30,3 +30,14 @@ function removeactive () {
     let imgactive = document.querySelector(".active")
     imgactive.classList.remove("active")
 }
+//moveSlider-------------------------------------------------------
+function imgAuto() {
+    index++
+    if (index > imgNumber.length-1){
+        index=0
+    }
+    removeactive ()
+    document.querySelector(".slider-content-left-top").style.right = index *100+"%"
+    imgNumberLi[index].classList.add("active")
+}
+setInterval(imgAuto,5000)
