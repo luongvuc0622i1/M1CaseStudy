@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="addBox.css">
+
+
 </head>
 <body>
 <header>
@@ -21,6 +25,7 @@
     </a>
     <h1 style="font-family: 'Comic Sans MS';color:#2f318d">GIA BINH MEDICINE</h1>
 </header>
+
 <nav>
     <div class="container">
         <ul>
@@ -37,7 +42,32 @@
                 </div>
             </li>
             <li><input type="text" placeholder="        Bạn tìm gì..."><i class="fa-solid fa-magnifying-glass"></i></li>
-            <li><a href=""><button><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</button></a></li>
+            <li><a href=""><button onclick="showCart()"><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</button></a>
+                <div class="showcart">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                        <span class="cart-price cart-header cart-column">Giá</span>
+                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                    </div>
+                    <div class="cart-items">
+<!--                        <div class="cart-row">-->
+<!--                            <div class="cart-item cart-column">-->
+<!--                                <img class="" width="100" height="100">-->
+<!--                                <span class="cart-item-title"></span>-->
+<!--                            </div>-->
+<!--                            <span class="cart-price cart-column"></span>-->
+<!--                            <div class="cart-quantity cart-column">-->
+<!--                                <input class="cart-quantity-input" type="number" value="1">-->
+<!--                                <button class="btn btn-danger" type="button">Xóa</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0 VNĐ</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
             <li><a href=""><button><i class="fa-solid fa-gift"></i>Ưu đãi</button></a></li>
             <li><a href="">Sống khoẻ</a></li>
             <li><a href="">Hỏi đáp</a></li>
@@ -135,13 +165,13 @@
             <h2 class="title_h2">Thuốc</h2>
             <div class="product-content owl-carousel owl-theme">
                 <div class="product-content-item item">
-                    <img src="image/thuốc%201.jpg" alt="">
+                    <img class="img-prd" src="image/thuốc%201.jpg" alt="">
                     <div class="product-content-item-text">
                         <div class="product-content-item-text-top">
-                            <h1>HAPACOL 325 FLU</h1>
-                            <p>52.800<sup>đ</sup>/Hộp</p>
+                            <h1 class="content-product-h1">HAPACOL 325 FLU</h1>
+                            <p class="price">52800<sup>đ</sup>/Hộp</p>
                         </div>
-                        <button>Thêm vào giỏ</button>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
                         <div class="product-content-item-text-social">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
@@ -151,13 +181,13 @@
                     </div>
                 </div>
                 <div class="product-content-item item">
-                    <img src="image/thuốc%202.jpg" alt="">
+                    <img class="img-prd" src="image/thuốc%202.jpg" alt="">
                     <div class="product-content-item-text">
                         <div class="product-content-item-text-top">
-                            <h1>HAPACOL 325 FLU</h1>
-                            <p>52.800<sup>đ</sup>/Hộp</p>
+                            <h1 class="content-product-h1">DOAXAN-S</h1>
+                            <p class="price">95000<sup>đ</sup>/Hộp</p>
                         </div>
-                        <button>Thêm vào giỏ</button>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
                         <div class="product-content-item-text-social">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
@@ -167,13 +197,13 @@
                     </div>
                 </div>
                 <div class="product-content-item item">
-                    <img src="image/thuốc%203.jpg" alt="">
+                    <img class="img-prd" src="image/thuốc%203.jpg" alt="">
                     <div class="product-content-item-text">
                         <div class="product-content-item-text-top">
-                            <h1>HAPACOL 325 FLU</h1>
-                            <p>52.800<sup>đ</sup>/Hộp</p>
+                            <h1 class="content-product-h1">Diclofen</h1>
+                            <p class="price">30000<sup>đ</sup>/Hộp</p>
                         </div>
-                        <button>Thêm vào giỏ</button>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
                         <div class="product-content-item-text-social">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
@@ -183,13 +213,13 @@
                     </div>
                 </div>
                 <div class="product-content-item item">
-                    <img src="image/thuốc%204.jpg" alt="">
+                    <img class="img-prd" src="image/thuốc%204.jpg" alt="">
                     <div class="product-content-item-text">
                         <div class="product-content-item-text-top">
-                            <h1>HAPACOL 325 FLU</h1>
-                            <p>52.800<sup>đ</sup>/Hộp</p>
+                            <h1 class="content-product-h1">Falgankid</h1>
+                            <p class="price">78000<sup>đ</sup>/Hộp</p>
                         </div>
-                        <button>Thêm vào giỏ</button>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
                         <div class="product-content-item-text-social">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
@@ -199,13 +229,13 @@
                     </div>
                 </div>
                 <div class="product-content-item item">
-                    <img src="image/thuốc%205.jpg" alt="">
+                    <img class="img-prd" src="image/thuốc%205.jpg" alt="">
                     <div class="product-content-item-text">
                         <div class="product-content-item-text-top">
-                            <h1>HAPACOL 325 FLU</h1>
-                            <p>52.800<sup>đ</sup>/Hộp</p>
+                            <h1 class="content-product-h1">Cảm Xuyên Hương</h1>
+                            <p class="price">64000<sup>đ</sup>/Hộp</p>
                         </div>
-                        <button>Thêm vào giỏ</button>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
                         <div class="product-content-item-text-social">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
@@ -215,13 +245,13 @@
                     </div>
                 </div>
                 <div class="product-content-item item">
-                    <img src="image/thuốc%206.jpg" alt="">
+                    <img class="img-prd" src="image/thuốc%206.jpg" alt="">
                     <div class="product-content-item-text">
                         <div class="product-content-item-text-top">
-                            <h1>HAPACOL 325 FLU</h1>
-                            <p>52.800<sup>đ</sup>/Hộp</p>
+                            <h1 class="content-product-h1">Ibuprofen</h1>
+                            <p class="price">88000<sup>đ</sup>/Hộp</p>
                         </div>
-                        <button>Thêm vào giỏ</button>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
                         <div class="product-content-item-text-social">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
@@ -231,13 +261,13 @@
                     </div>
                 </div>
                 <div class="product-content-item item">
-                    <img src="image/thuốc%207.jpg" alt="">
+                    <img class="img-prd" src="image/thuốc%207.jpg" alt="">
                     <div class="product-content-item-text">
                         <div class="product-content-item-text-top">
-                            <h1>HAPACOL 325 FLU</h1>
-                            <p>52.800<sup>đ</sup>/Hộp</p>
+                            <h1 class="content-product-h1">Panadol Viên sủi</h1>
+                            <p class="price">60000<sup>đ</sup>/Hộp</p>
                         </div>
-                        <button>Thêm vào giỏ</button>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
                         <div class="product-content-item-text-social">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
@@ -247,13 +277,13 @@
                     </div>
                 </div>
                 <div class="product-content-item item">
-                    <img src="image/thuốc%208.jpg" alt="">
+                    <img class="img-prd" src="image/thuốc%208.jpg" alt="">
                     <div class="product-content-item-text">
                         <div class="product-content-item-text-top">
-                            <h1>HAPACOL 325 FLU</h1>
-                            <p>52.800<sup>đ</sup>/Hộp</p>
+                            <h1 class="content-product-h1">PARACETAMOL 500mg </h1>
+                            <p class="price">34000<sup>đ</sup>/Hộp</p>
                         </div>
-                        <button>Thêm vào giỏ</button>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
                         <div class="product-content-item-text-social">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
@@ -263,13 +293,13 @@
                     </div>
                 </div>
                 <div class="product-content-item item">
-                    <img src="image/thuốc%209.jpg" alt="">
+                    <img class="img-prd" src="image/thuốc%209.jpg" alt="">
                     <div class="product-content-item-text">
                         <div class="product-content-item-text-top">
-                            <h1>HAPACOL 325 FLU</h1>
-                            <p>52.800<sup>đ</sup>/Hộp</p>
+                            <h1 class="content-product-h1">Tuspi</h1>
+                            <p class="price">147000<sup>đ</sup>/Hộp</p>
                         </div>
-                        <button>Thêm vào giỏ</button>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
                         <div class="product-content-item-text-social">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
@@ -279,13 +309,13 @@
                     </div>
                 </div>
                 <div class="product-content-item item">
-                    <img src="image/thuốc%2010.jpg" alt="">
+                    <img class="img-prd" src="image/thuốc%2010.jpg" alt="">
                     <div class="product-content-item-text">
                         <div class="product-content-item-text-top">
-                            <h1>HAPACOL 325 FLU</h1>
-                            <p>52.800<sup>đ</sup>/Hộp</p>
+                            <h1 class="content-product-h1">Paracetamol Choay</h1>
+                            <p class="price">70000<sup>đ</sup>/Hộp</p>
                         </div>
-                        <button>Thêm vào giỏ</button>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
                         <div class="product-content-item-text-social">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
@@ -295,13 +325,13 @@
                     </div>
                 </div>
                 <div class="product-content-item item">
-                    <img src="image/thuốc%2011.jpg" alt="">
+                    <img class="img-prd" src="image/thuốc%2011.jpg" alt="">
                     <div class="product-content-item-text">
                         <div class="product-content-item-text-top">
-                            <h1>HAPACOL 325 FLU</h1>
-                            <p>52.800<sup>đ</sup>/Hộp</p>
+                            <h1 class="content-product-h1">Coldfed</h1>
+                            <p class="price">21000<sup>đ</sup>/Chai</p>
                         </div>
-                        <button>Thêm vào giỏ</button>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
                         <div class="product-content-item-text-social">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
@@ -311,13 +341,13 @@
                     </div>
                 </div>
                 <div class="product-content-item item">
-                    <img src="image/thuốc%2012.jpg" alt="">
+                    <img class="img-prd" src="image/thuốc%2012.jpg" alt="">
                     <div class="product-content-item-text">
                         <div class="product-content-item-text-top">
-                            <h1>HAPACOL 325 FLU</h1>
-                            <p>52.800<sup>đ</sup>/Hộp</p>
+                            <h1 class="content-product-h1">ROBNADOL Paracetamol 500mg</h1>
+                            <p class="price">100000<sup>đ</sup>/Hộp</p>
                         </div>
-                        <button>Thêm vào giỏ</button>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
                         <div class="product-content-item-text-social">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
@@ -327,13 +357,13 @@
                     </div>
                 </div>
                 <div class="product-content-item item">
-                    <img src="image/thuốc%2013.jpg" alt="">
+                    <img class="img-prd" src="image/thuốc%2013.jpg" alt="">
                     <div class="product-content-item-text">
                         <div class="product-content-item-text-top">
-                            <h1>HAPACOL 325 FLU</h1>
-                            <p>52.800<sup>đ</sup>/Hộp</p>
+                            <h1 class="content-product-h1">Paracetamol STADA 250mg</h1>
+                            <p class="price">55000<sup>đ</sup>/Hộp</p>
                         </div>
-                        <button>Thêm vào giỏ</button>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
                         <div class="product-content-item-text-social">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
@@ -343,13 +373,13 @@
                     </div>
                 </div>
                 <div class="product-content-item item">
-                    <img src="image/thuốc%2014.jpg" alt="">
+                    <img class="img-prd" src="image/thuốc%2014.jpg" alt="">
                     <div class="product-content-item-text">
                         <div class="product-content-item-text-top">
-                            <h1>HAPACOL 325 FLU</h1>
-                            <p>52.800<sup>đ</sup>/Hộp</p>
+                            <h1 class="content-product-h1">HAPACOL PAIN</h1>
+                            <p class="price">77000<sup>đ</sup>/Hộp</p>
                         </div>
-                        <button>Thêm vào giỏ</button>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
                         <div class="product-content-item-text-social">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
@@ -359,13 +389,13 @@
                     </div>
                 </div>
                 <div class="product-content-item item">
-                    <img src="image/thuốc%2015.jpg" alt="">
+                    <img class="img-prd" src="image/thuốc%2015.jpg" alt="">
                     <div class="product-content-item-text">
                         <div class="product-content-item-text-top">
-                            <h1>HAPACOL 325 FLU</h1>
-                            <p>52.800<sup>đ</sup>/Hộp</p>
+                            <h1 class="content-product-h1">Viên xông Hương Tràm</h1>
+                            <p class="price">25000<sup>đ</sup>/Hộp</p>
                         </div>
-                        <button>Thêm vào giỏ</button>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
                         <div class="product-content-item-text-social">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
@@ -375,10 +405,799 @@
                     </div>
                 </div>
             </div>
-        </div></div>
+        </div>
+        <br><br>
+        <div class="product-items">
+            <h2 class="title_h2">Thực phẩm chức năng</h2>
+            <div class="product-content owl-carousel owl-theme">
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn1.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Hoạt huyết KAWA</h1>
+                            <p class="price">105000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn2.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Siro BRAUER babyKids</h1>
+                            <p class="price">252200<sup>đ</sup>/Chai</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn3.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">An tâm ngủ ngon KAWA</h1>
+                            <p class="price">105000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn4.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Xuyên Tâm Huyền Thảo</h1>
+                            <p class="price">74250<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn5.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Herba Cool</h1>
+                            <p class="price">32300<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn6.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Glucosarmine HCL 1500mg</h1>
+                            <p class="price">420000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn7.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Costar Omega-3</h1>
+                            <p class="price">270000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn8.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Cà gai leo CaliUSA</h1>
+                            <p class="price">131250<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn9.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Evening Primrose Oil</h1>
+                            <p class="price">319200<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn10.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Cốm BIOVIT</h1>
+                            <p class="price">110250<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn11.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Siro Alpes</h1>
+                            <p class="price">41250<sup>đ</sup>/Chai</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn12.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Siro Ivy Extra</h1>
+                            <p class="price">44250<sup>đ</sup>/Chai</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn13.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Welhair For Women</h1>
+                            <p class="price">156750<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn14.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Astax 4mg</h1>
+                            <p class="price">352000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn15.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Hồng sâm Hàn Quốc Shinsam</h1>
+                            <p class="price">1120000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="product-items">
+            <h2 class="title_h2">Vật tư y tế</h2>
+            <div class="product-content owl-carousel owl-theme">
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn1.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Hoạt huyết KAWA</h1>
+                            <p class="price">105000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn2.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Siro BRAUER babyKids</h1>
+                            <p class="price">252200<sup>đ</sup>/Chai</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn3.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">An tâm ngủ ngon KAWA</h1>
+                            <p class="price">105000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn4.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Xuyên Tâm Huyền Thảo</h1>
+                            <p class="price">74250<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn5.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Herba Cool</h1>
+                            <p class="price">32300<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn6.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Glucosarmine HCL 1500mg</h1>
+                            <p class="price">420000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn7.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Costar Omega-3</h1>
+                            <p class="price">270000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn8.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Cà gai leo CaliUSA</h1>
+                            <p class="price">131250<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn9.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Evening Primrose Oil</h1>
+                            <p class="price">319200<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn10.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Cốm BIOVIT</h1>
+                            <p class="price">110250<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn11.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Siro Alpes</h1>
+                            <p class="price">41250<sup>đ</sup>/Chai</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn12.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Siro Ivy Extra</h1>
+                            <p class="price">44250<sup>đ</sup>/Chai</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn13.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Welhair For Women</h1>
+                            <p class="price">156750<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn14.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Astax 4mg</h1>
+                            <p class="price">352000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn15.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Hồng sâm Hàn Quốc Shinsam</h1>
+                            <p class="price">1120000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="product-items">
+            <h2 class="title_h2">Mỹ phẩm</h2>
+            <div class="product-content owl-carousel owl-theme">
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn1.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Hoạt huyết KAWA</h1>
+                            <p class="price">105000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn2.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Siro BRAUER babyKids</h1>
+                            <p class="price">252200<sup>đ</sup>/Chai</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn3.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">An tâm ngủ ngon KAWA</h1>
+                            <p class="price">105000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn4.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Xuyên Tâm Huyền Thảo</h1>
+                            <p class="price">74250<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn5.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Herba Cool</h1>
+                            <p class="price">32300<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn6.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Glucosarmine HCL 1500mg</h1>
+                            <p class="price">420000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn7.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Costar Omega-3</h1>
+                            <p class="price">270000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn8.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Cà gai leo CaliUSA</h1>
+                            <p class="price">131250<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn9.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Evening Primrose Oil</h1>
+                            <p class="price">319200<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn10.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Cốm BIOVIT</h1>
+                            <p class="price">110250<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn11.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Siro Alpes</h1>
+                            <p class="price">41250<sup>đ</sup>/Chai</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn12.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Siro Ivy Extra</h1>
+                            <p class="price">44250<sup>đ</sup>/Chai</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn13.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Welhair For Women</h1>
+                            <p class="price">156750<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn14.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Astax 4mg</h1>
+                            <p class="price">352000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-item item">
+                    <img class="img-prd" src="image/tpcn15.jpg" alt="">
+                    <div class="product-content-item-text">
+                        <div class="product-content-item-text-top">
+                            <h1 class="content-product-h1">Hồng sâm Hàn Quốc Shinsam</h1>
+                            <p class="price">1120000<sup>đ</sup>/Hộp</p>
+                        </div>
+                        <button class="btn btn-cart">Thêm vào giỏ</button>
+                        <div class="product-content-item-text-social">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
+<!-------------------------------SectionStory------------------------------->
 
+<!-- Site footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <h6>Danh ngôn</h6>
+                <p class="text-justify">Chúng tôi cố không bao giờ quên đi rằng y học là vì con người.
+                    <br>Y học không phải là vì lợi nhuận.
+                    <br>Lợi nhuận theo sau, và nếu chúng tôi nhớ được điều đó, lợi nhuận không bao giờ không xuất hiện.
+                    <br>Chúng tôi càng ghi nhớ tốt điều đó, lợi nhuận lại càng lớn.
+                    <br>– George Wilhelm Merck -</p>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <h6>Danh mục</h6>
+                <ul class="footer-links">
+                    <li><a href="">Thuốc</a></li>
+                    <li><a href="">Thực phẩm chức năng</a></li>
+                    <li><a href="">Vật tư y tế</a></li>
+                    <li><a href="">Mỹ phẩm</a></li>
+                </ul>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <h6>Liên hệ</h6>
+                <ul class="footer-links">
+                    <li>Dược sỹ: PHẠM THANH HIỀN</li>
+                    <li>Số điện thoại: 0833161122</li>
+                    <li>Email: phamhien.bn2369@gmail.com</li>
+                    <li>Địa chỉ: Quầy thuốc Gia Bình số 2 - Nhân Thắng - Gia Bình - Bắc Ninh</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <br>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                    <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100029696926690"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <script src="form-login.js"></script>
     <script src="slider.js"></script>
@@ -402,5 +1221,6 @@
             }
         })
     </script>
+    <script src="addBox.js"></script>
 </body>
 </html>

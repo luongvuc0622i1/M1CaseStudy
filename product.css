@@ -29,6 +29,9 @@
     top: 50%;
     transform: translateY(-50%);
 }
+.owl-prev, .owl-next {
+    background-color: transparent!important;
+}
 .owl-prev {
     left: 0;
 }
