@@ -35,6 +35,3 @@ function login(){
         // return;
     }
 };
-
-
-window.open("cachtaobang.html");

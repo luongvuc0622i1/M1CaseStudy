@@ -16,6 +16,10 @@ for (var i = 0; i < add_cart.length; i++) {
     })
 }
 
+
+
+
+
 function addItemToCart(title, price, img) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
@@ -64,9 +68,7 @@ for (var i = 0; i < remove_cart.length; i++) {
         button_remove.parentElement.parentElement.remove()
     })
 }
-
 // update cart
-
 var total = 0;
 function updatecart() {
     var cart_item = document.getElementsByClassName("cart-items")[0];
