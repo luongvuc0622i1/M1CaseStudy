@@ -22,3 +22,19 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+//Kiểm tra đăng nhập:
+function login(){
+    let username=document.getElementById("enter").value;
+    let password=document.getElementById("enter2").value;
+    if(username=="admin" && password=="admin"){
+        alert("Bạn là admin của trang");
+    }else{
+        alert("Kiểm tra lại!");
+        // return;
+    }
+};
+
+
+window.open("cachtaobang.html");
